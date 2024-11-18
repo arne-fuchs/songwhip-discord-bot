@@ -24,7 +24,7 @@ RUN apt update && \
 WORKDIR /app
 
 # Copy just the compiled binary from the previous stage
-COPY --from=builder /app/target/release/songwhip-discord-bot /app/
+COPY --from=builder /app/target/release/songlink-discord-bot /app/
 
 # Set the entry point
-CMD ["/app/songwhip-discord-bot"]
+CMD ["/app/songlink-discord-bot"]
